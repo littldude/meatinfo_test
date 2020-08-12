@@ -38,6 +38,16 @@ body {
   display: flex;
   align-items: center;
 }
+.section__approval {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  padding: 16px 24px 24px 24px;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  color: #424242;
+}
 .section__inner {
   margin-top: 16px;
 }
@@ -50,6 +60,8 @@ body {
 }
 
 .buttons__row {
+  position: relative;
+  margin-bottom: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,6 +123,18 @@ body {
   color: #ffffff;
   transition: 0.2s linear;
 }
+.button__table {
+  width: 60px;
+  height: 24px;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 11px;
+}
+.button__table--sell {
+  background-color: #6199C6;
+}
 
 .search__form {
   margin-bottom: 32px;
@@ -149,7 +173,10 @@ body {
   color: #212121;
   font-weight: 500;
   font-size: 24px;
-  line-height: 32px;
+}
+.title__table {
+  margin-bottom: 16px;
+  font-size: 19px;
 }
 
 .adv__inner--item {
@@ -167,6 +194,102 @@ body {
   line-height: 30px;
 }
 
+.table {
+  width: 100%;
+  color: #424242;
+  font-size: 12px;
+}
+.table thead {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+.table thead th {
+  padding: 16px 0;
+}
+.table td {
+  padding: 8px 0;
+}
+.table__name {
+  text-align: center;
+}
+.table__view {
+  text-align: center;
+}
+.table__text {
+  color: #005FAE;
+  font-size: 12px;
+}
+.table__text--sell::before {
+  margin-right: 16px;
+  margin-left: 16px;
+  content: "Продам";
+  padding: 4px;
+  width: 60px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #005FAE;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 11px;
+}
+.table__text--buy::before {
+  margin-right: 16px;
+  margin-left: 16px;
+  content: "Куплю";
+  padding: 4px 8px;
+  width: 60px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #EE6C4D;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 11px;
+}
+.table__profile {
+  display: flex;
+  align-items: center;
+}
+.table__profile--text {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.table__profile--text_name {
+  color: #005FAE;
+  font-size: 12px;
+  font-weight: 400;
+}
+.table__profile--text_company {
+  margin: 0;
+  color: #999999;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.about {
+  width: 100%;
+  padding: 16px;
+  background-color: #f0f0f0;
+}
+.about__text {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #424242;
+  font-weight: 400;
+  font-size: 14px;
+}
+.about__text .black {
+  font-weight: 500;
+}
+
+.divider {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 1px;
+  background-color: #E0E0E0;
+}
+
 .i-back {
   display: block;
   width: 20px;
@@ -178,4 +301,10 @@ body {
   width: 24px;
   height: 24px;
   fill: #005FAE;
+  cursor: pointer;
+}
+.i-view {
+  width: 16px;
+  height: 16px;
+  fill: #424242;
 }
