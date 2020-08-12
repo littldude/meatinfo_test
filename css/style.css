@@ -37,6 +37,15 @@ body {
   color: #666666;
 }
 
+.section__title {
+  margin-bottom: 16px;
+  color: #212121;
+  font-weight: 500;
+  font-size: 19px;
+}
+.section__title--header {
+  font-size: 24px;
+}
 .section__back {
   display: flex;
   align-items: center;
@@ -172,14 +181,13 @@ body {
   color: #ffffff;
 }
 
-.title {
-  color: #212121;
-  font-weight: 500;
-  font-size: 24px;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
 }
-.title__table {
-  margin-bottom: 16px;
-  font-size: 19px;
+.gallery img {
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .adv__inner--item {

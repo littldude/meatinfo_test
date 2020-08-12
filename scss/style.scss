@@ -45,6 +45,15 @@ body {
 }
 
 .section {
+    &__title {
+        margin-bottom: 16px;
+        color: $black;
+        font-weight: 500;
+        font-size: 19px;
+        &--header{
+            font-size: 24px;
+        }
+    }
     &__back {
         display: flex;
         align-items: center;
@@ -185,16 +194,14 @@ body {
     }
 }
 
-.title {
-    color: $black;
-    font-weight: 500;
-    font-size: 24px;
-    &__table {
-        margin-bottom: 16px;
-        font-size: 19px;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        margin-right: 8px;
+        margin-bottom: 8px;
     }
 }
-
 
 .adv {
     &__inner {
