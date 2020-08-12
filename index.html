@@ -4,10 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> 
     <title>Meatinfo_test</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="row header-top"></div>
+        <!-- /.row -->
+        <div class="row header-bottom"></div>
+        <!-- /.row -->
+    </header>
+    <!-- /.header -->
+    <section class="section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10">
+                    <nav class="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a class="breadcrumb-item__link" href="#">Главная</a>
+                                 <!-- /.breadcrumb-item__link -->
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a class="breadcrumb-item__link" href="#">Мясные компании в Москве</a>
+                                 <!-- /.breadcrumb-item__link -->
+                            </li>
+                            <li class="breadcrumb-item" aria-current="page">
+                                Преображенский МПК, ООО
+                                 <!-- /.breadcrumb-item__link -->
+                            </li>
+                        </ol>
+                        <!-- /.breadcrumb -->
+                    </nav>
+                    <!-- /.breadcrumb -->
+                    <div class="section__search">
+                        <form class="search__form">
+                            <input type="text" placeholder="Поиск по компаниям">
+                            <button class="button button__search" type="submit"></button> 
+                            <!-- /.button -->
+                        </form>
+                        <!-- /.search__form -->
+                    </div>
+                    <!-- /.section__search -->
+                    <div class="section__back">
+                        <svg class="i-back">
+                            <use href="sprite.svg#back"></use>
+                        </svg>
+                        <a class="button button__back" href="#">К каталогу компании</a> 
+                    <!-- /.button -->
+                    </div>
+                    <!-- /.section__back -->
+                    <div class="section__inner">
+                        <div class="section__title">
+                            <svg class="i-approval">
+                                <use href="sprite.svg#approval"></use>
+                            </svg>
+                            <h2 class="title">Преображенский МПК, ООО</h2>
+                        <!-- /.title -->
+                        </div>
+                        <!-- /.section__title -->
+                    </div>
+                    <!-- /.section__inner -->
+                    <div class="section__buttons">
+                        <div class="buttons__row">
+                            <div class="buttons__row--grey">
+                                <span class="button button__view">578 (+2)</span> 
+                                <!-- /.button -->
+                                <a class="button button__comment" href="#">Оставаить отзыв</a>
+                                 <!-- /.button -->
+                            </div>
+                            <!-- /.buttons__row--grey -->
+                            <button class="button button__work">Работаете в этой компании?</button>
+                             <!-- /.button -->
+                        </div>
+                        <!-- /.buttons__row -->
+                    </div>
+                    <!-- /.section__buttons -->
+                </div>
+                <!-- /.col-md-10 -->
+                
+                <div class="col-md-2 adv">
+                    <div class="adv__inner">
+                        <div class="adv__inner--item">
+                            <span>Реклама</span>
+                        </div>
+                        <!-- /.adv__item -->
+                        <div class="adv__inner--item">
+                            <span>Реклама</span>
+                        </div>
+                        <!-- /.adv__item -->
+                    </div>
+                    <!-- /.adv__inner -->
+                </div>
+                <!-- /.col-md-2 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.section -->
 </body>
 </html>
