@@ -26,9 +26,12 @@ body {
 .breadcrumb {
   background-color: transparent;
 }
+.breadcrumb ol {
+  margin: 0 0 16px 0;
+  padding: 0;
+}
 .breadcrumb-item {
   font-size: 12px;
-  line-height: 16px;
 }
 .breadcrumb-item__link {
   color: #666666;

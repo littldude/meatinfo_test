@@ -32,9 +32,12 @@ body {
 
 .breadcrumb {
     background-color: transparent;
+    ol {
+        margin: 0 0 16px 0;
+        padding: 0;
+    }
     &-item {
         font-size: 12px;
-        line-height: 16px;
         &__link {
             color: #666666;
         }
