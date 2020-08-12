@@ -10,7 +10,7 @@
     <title>Meatinfo_test</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container-fluid">
             <div class="row header-top"></div>
             <!-- /.row -->
@@ -24,7 +24,7 @@
     <section class="section">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-md-12 col-xl-10">
                     <nav class="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
@@ -91,7 +91,7 @@
                     </div>
                     <!-- /.section__buttons -->
                     <div class="row content">
-                        <div class="col-md-9 col-lg-8">
+                        <div class="col-md-9">
                             <div class="content__table">
                                 <h3 class="section__title">Последние объявления сотрудников компании</h3>
                                 <!-- /.table__title -->
@@ -206,7 +206,7 @@
                             <!-- /.gallery -->
                         </div>
                         <!-- /.col-md-8 -->
-                        <div class="col-md-3 col-lg-4">
+                        <div class="col-md-3">
                             <div class="content__text">
                                 <a class="logo" href="#">
                                     <img src="img/logo.png" alt="Преображенский МПК">
@@ -218,9 +218,11 @@
                                     <p class="about__text"><span class="black">ИНН:</span> 6726022894</p>
                                     <p class="about__text"><span class="black">Страна:</span> Россия</p>
                                     <p class="about__text"><span class="black">Регион:</span> Тверская область</p>
-                                    <p class="about__text"><span class="black">Описание:</span> Преображенский МПК - современное мясоперерабатывающее предприятие в Тверской области.
+                                    <p class="about__text hidden"><span class="black">Описание:</span> Преображенский МПК - современное мясоперерабатывающее предприятие в Тверской области.
                                         Введен в эксплуатацию в 2013 г. Основу ассортимента составляют порционные и мелкокусковые полуфабрикаты из охлажденной свинины. Продукция мясокомбината является частью вертикально-интегрированного холдинга КоПИТАНИЯФ.<br> 
                                         Предприятия холдинга образуют полный цикл производства от выращивания зерна и производства комбикормов до производства свежего мяса, что позволяет снизить себестоимость и гарантировать безопасность и высокое качество продукции.</p>
+                                        <a class="about__text--show" href="#">Читать все</a> 
+                                        <!-- /.about__text -->
                                     <p class="about__text"><span class="black">Виды деятельности:</span><br>
                                         – Оборудование, упаковка<br>
                                         – Оптовая торговля<br>
@@ -246,7 +248,7 @@
                 </div>
                 <!-- /.col-md-10 -->
                 
-                <div class="col-md-2 adv">
+                <div class="col-lg-2 adv">
                     <div class="adv__inner">
                         <div class="adv__inner--item">
                             <span>Реклама</span>
@@ -266,12 +268,34 @@
         <!-- /.container-fluid -->
     </section>
     <!-- /.section -->
-    <script>
-     
+    
+    <button class="button button__up">
+        <svg class="i-up">
+            <use href="sprite.svg#up"></use>
+        </svg>
+    </button>
+     <!-- /.button -->
+
+     <script>
         $(document).ready(function () {
             $('.i-approval').hover(function() {
                 $('.section__approval').slideToggle(200);
             });
+            $('.button__up').click(function() {
+                $('html, body').animate({scrollTop:0}, '300');
+            });
+
+            $('.about__text--show').click(function(){
+                $('.about__text--hidden').toggleClass('about__text--hidden');	
+                if ($('.about__text--hidden').hasClass('about__text--hidden')) {
+                    $('.about__text--show').text('Читать все');
+
+                } else {
+                    $('.about__text--show').text('Скрыть');
+                }		
+                // return false;
+
+            });	
         });
       
     </script>

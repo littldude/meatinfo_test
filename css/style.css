@@ -6,6 +6,7 @@
 }
 
 body {
+  position: relative;
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
 }
@@ -105,7 +106,7 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  content: url("../img/ic_view.png");
+  content: url("../img/icons/ic_view.png");
 }
 .button__comment {
   display: flex;
@@ -118,7 +119,7 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  content: url("../img/ic_comment.png");
+  content: url("../img/icons/ic_comment.png");
 }
 .button__work {
   padding: 10px 24px;
@@ -146,6 +147,21 @@ body {
 }
 .button__table--sell {
   background-color: #6199C6;
+}
+.button__up {
+  display: none;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  background-color: #005FAE;
+  border-radius: 100%;
+  border: none;
+}
+.button__up:hover {
+  opacity: 0.9;
+  transition: 0.2s linear;
 }
 
 .search__form {
@@ -218,6 +234,8 @@ body {
   padding: 16px 0;
 }
 .table td {
+  width: -webkit-max-content;
+  width: max-content;
   padding: 8px 0;
 }
 .table__name {
@@ -229,6 +247,9 @@ body {
 .table__text {
   color: #005FAE;
   font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .table__text--sell::before {
   margin-right: 16px;
@@ -278,6 +299,11 @@ body {
   overflow: hidden;
 }
 
+.logo {
+  width: 180px;
+  height: auto;
+}
+
 .about {
   width: 100%;
   padding: 16px;
@@ -287,6 +313,16 @@ body {
   margin-top: 0;
   margin-bottom: 8px;
   color: #424242;
+  font-weight: 400;
+  font-size: 14px;
+}
+.about__text--hidden {
+  height: auto;
+}
+.about__text--show {
+  display: none;
+  margin: 8px 0;
+  color: #005FAE;
   font-weight: 400;
   font-size: 14px;
 }
@@ -318,4 +354,33 @@ body {
   width: 16px;
   height: 16px;
   fill: #424242;
+}
+.i-up {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+@media (max-width: 1112px) {
+  .adv {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .button__up {
+    display: block;
+  }
+
+  .about__text--hidden {
+    height: 197px;
+    overflow: hidden;
+  }
+  .about__text--show {
+    display: block;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
 }
