@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> 
     <title>Meatinfo_test</title>
 </head>
 <body>
     <header class="header">
-        <div class="row header-top"></div>
-        <!-- /.row -->
-        <div class="row header-bottom"></div>
-        <!-- /.row -->
+        <div class="container-fluid">
+            <div class="row header-top"></div>
+            <!-- /.row -->
+            <div class="row header-bottom"></div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+        
     </header>
     <!-- /.header -->
     <section class="section">
@@ -64,6 +69,10 @@
                         <!-- /.title -->
                         </div>
                         <!-- /.section__title -->
+                        <div class="section__approval">
+                            Реквизиты компании проверены<br> банковским переводом.
+                        </div>
+                        <!-- /.section__approval -->
                     </div>
                     <!-- /.section__inner -->
                     <div class="section__buttons">
@@ -81,6 +90,141 @@
                         <!-- /.buttons__row -->
                     </div>
                     <!-- /.section__buttons -->
+                    <div class="row content">
+                        <div class="col-md-9 col-lg-8">
+                            <div class="content__table">
+                                <h3 class="title__table">Последние объявления сотрудников компании</h3>
+                                <!-- /.table__title -->
+                                <div class="divider"></div>
+                                <!-- /.divider -->
+                                <table class="table">
+                                    <tbody>
+                                        <thead>
+                                            <tr><th class="table__name">Объявление</th><th>Время</th><th class="table__view"><svg class="i-view"><use href="sprite.svg#view"></use></svg></th><th>Опубликовал</th></tr>
+                                        </thead>
+                                        <tr><td><a class="table__text table__text--sell" href="#"> Желудки куриные очищенные 60 руб.</a></td><td>5 фев</td><td class="table__view">155</td>
+                                            <td>
+                                                <div class="table__profile">
+                                                    <img src="img/no-photo.png" alt="Татьяна Лобач">
+                                                    <div class="table__profile--text">
+                                                        <a class="table__profile--text_name" href="">Татьяна Лобач</a>
+                                                        <p class="table__profile--text_company">Орехово-Зуевский мясокомбинат</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr><td><a class="table__text table__text--sell" href="#"> ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р</a></td><td>27 янв</td><td class="table__view">185</td>
+                                            <td>
+                                                <div class="table__profile">
+                                                    <img src="img/no-photo.png" alt="Татьяна Лобач">
+                                                    <div class="table__profile--text">
+                                                        <a class="table__profile--text_name" href="">Татьяна Лобач</a>
+                                                        <p class="table__profile--text_company">Орехово-Зуевский мясокомбинат</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr><td><a class="table__text table__text--buy href="#"> Курица, Индейка, Говядина, Свинина от МК</a></td><td>21 апр</td><td class="table__view">42609</td>
+                                            <td>
+                                                <div class="table__profile">
+                                                    <img src="img/no-photo.png" alt="Татьяна Лобач">
+                                                    <div class="table__profile--text">
+                                                        <a class="table__profile--text_name" href="">Татьяна Лобач</a>
+                                                        <p class="table__profile--text_company">Орехово-Зуевский мясокомбинат</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr><td><a class="table__text table__text--buy href="#"> ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р</a></td><td>27 фев</td><td class="table__view">319</td>
+                                            <td>
+                                                <div class="table__profile">
+                                                    <img src="img/no-photo.png" alt="Татьяна Лобач">
+                                                    <div class="table__profile--text">
+                                                        <a class="table__profile--text_name" href="">Татьяна Лобач</a>
+                                                        <p class="table__profile--text_company">Орехово-Зуевский мясокомбинат</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr><td><a class="table__text table__text--sell" href="#"> Курица, Индейка, Говядина, Свинина от МК</a></td><td>7 фев</td><td class="table__view">10072</td>
+                                            <td>
+                                                <div class="table__profile">
+                                                    <img src="img/no-photo.png" alt="Татьяна Лобач">
+                                                    <div class="table__profile--text">
+                                                        <a class="table__profile--text_name" href="">Татьяна Лобач</a>
+                                                        <p class="table__profile--text_company">Орехово-Зуевский мясокомбинат</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr><td><a class="table__text table__text--sell" href="#"> Фарш куриный ММО люкс 40руб/кг</a></td><td>7 фев</td><td class="table__view">300</td>
+                                            <td>
+                                                <div class="table__profile">
+                                                    <img src="img/photo.png" alt="Виталий Пчелинцев">
+                                                    <div class="table__profile--text">
+                                                        <a class="table__profile--text_name" href="">Виталий Пчелинцев</a>
+                                                        <p class="table__profile--text_company">ООО ОКЕАНФИШ</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr><td><a class="table__text table__text--sell" href="#"> Голень ЦБ ГОСТ 75 руб/кг</a></td><td>7 фев</td><td class="table__view">319</td>
+                                            <td>
+                                                <div class="table__profile">
+                                                    <img src="img/photo.png" alt="Виталий Пчелинцев">
+                                                    <div class="table__profile--text">
+                                                        <a class="table__profile--text_name" href="">Виталий Пчелинцев</a>
+                                                        <p class="table__profile--text_company">ООО ОКЕАНФИШ</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                   
+                                </table>
+                                <!-- /.table -->
+                            </div>
+                            <!-- /.content__table -->
+                        </div>
+                        <!-- /.col-md-8 -->
+                        <div class="col-md-3 col-lg-4">
+                            <div class="content__text">
+                                <a class="logo" href="#">
+                                    <img src="img/logo.png" alt="Преображенский МПК">
+                                </a>
+                                <!-- /.logo -->
+                                <div class="about">
+                                    <p class="about__text"><span class="black">Название компании:</span> ООО “Преображенский Мясоперерабатывающий Комбинат”</p>
+                                    <p class="about__text"><span class="black">ОГРН (ОГРНИП):</span> 1166733069612</p>
+                                    <p class="about__text"><span class="black">ИНН:</span> 6726022894</p>
+                                    <p class="about__text"><span class="black">Страна:</span> Россия</p>
+                                    <p class="about__text"><span class="black">Регион:</span> Тверская область</p>
+                                    <p class="about__text"><span class="black">Описание:</span> Преображенский МПК - современное мясоперерабатывающее предприятие в Тверской области.
+                                        Введен в эксплуатацию в 2013 г. Основу ассортимента составляют порционные и мелкокусковые полуфабрикаты из охлажденной свинины. Продукция мясокомбината является частью вертикально-интегрированного холдинга КоПИТАНИЯФ.<br> 
+                                        Предприятия холдинга образуют полный цикл производства от выращивания зерна и производства комбикормов до производства свежего мяса, что позволяет снизить себестоимость и гарантировать безопасность и высокое качество продукции.</p>
+                                    <p class="about__text"><span class="black">Виды деятельности:</span><br>
+                                        – Оборудование, упаковка<br>
+                                        – Оптовая торговля<br>
+                                        – Производитель готовой продукции<br>
+                                        – Производитель мясного сырья<br>
+                                        – Розничная торговля
+                                    </p>
+                                    <p class="about__text"><span class="black">Виды продукции:</span><br>
+                                        – Свинина<br>
+                                        – Замороженное и охлажденное мясо<br>
+                                        – Мясные полуфабрикаты<br>
+                                        – Колбасы, сосиски, деликатесы
+                                    </p>
+                                    <p class="about__text"><span class="black">Товары и услуги:</span> Мясо замороженное, мясо охлажденное, свинина, субпродукты</p>
+                                </div>
+                                <!-- /.about -->
+                            </div>
+                            <!-- /.content__text -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                    </div>
+                    <!-- /.row -->
                 </div>
                 <!-- /.col-md-10 -->
                 
@@ -104,5 +248,14 @@
         <!-- /.container-fluid -->
     </section>
     <!-- /.section -->
+    <script>
+     
+        $(document).ready(function () {
+            $('.i-approval').hover(function() {
+                $('.section__approval').slideToggle(200);
+            });
+        });
+      
+    </script>
 </body>
 </html>
