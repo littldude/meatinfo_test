@@ -234,9 +234,8 @@ body {
   padding: 16px 0;
 }
 .table td {
-  width: -webkit-max-content;
-  width: max-content;
   padding: 8px 0;
+  border-bottom: 1px #E0E0E0 solid;
 }
 .table__name {
   text-align: center;
@@ -247,9 +246,6 @@ body {
 .table__text {
   color: #005FAE;
   font-size: 12px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .table__text--sell::before {
   margin-right: 16px;
@@ -283,8 +279,6 @@ body {
 }
 .table__profile--text {
   margin-left: 8px;
-  display: flex;
-  flex-direction: column;
 }
 .table__profile--text_name {
   color: #005FAE;
@@ -294,9 +288,6 @@ body {
 .table__profile--text_company {
   margin: 0;
   color: #999999;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .logo {
@@ -382,5 +373,67 @@ body {
   .logo {
     width: 120px;
     height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .about__text--hidden {
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 800px) {
+  .table {
+    border: 0;
+  }
+  .table__text {
+    line-height: 20px;
+  }
+  .table__view {
+    text-align: right;
+  }
+  .table__profile {
+    justify-content: end;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+  .table td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border-bottom: 1px dotted #ccc;
+    border-right: 1px solid transparent;
+  }
+  .table td:last-child {
+    border-bottom: 0;
+  }
+  .table td::before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+@media (max-width: 568px) {
+  .section__title {
+    margin-bottom: 0;
+  }
+  .section__title--header {
+    font-size: 20px;
+  }
+  .section h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .button__work {
+    padding: 8px 15px;
   }
 }
