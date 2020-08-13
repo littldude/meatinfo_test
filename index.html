@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src="js/jquery-3.5.1.min.js"></script>
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> 
     <title>Meatinfo_test</title>
@@ -202,8 +203,37 @@
                                 <img src="img/gallery/img-1.png" alt="">
                                 <img src="img/gallery/img-3.png" alt="">
                                 <img src="img/gallery/img-4.png" alt="">
-
                             </div>
+                            <div class="swiper-container gallery__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide gallery__swiper--slide">
+                                        <img src="img/gallery/img-1.png" alt="">
+                                    </div>
+                                    <!-- /.swiper-slide -->
+                                    <div class="swiper-slide gallery__swiper--slide">
+                                        <img src="img/gallery/img-2.png" alt="">
+                                    </div>
+                                    <!-- /.swiper-slide -->
+                                    <div class="swiper-slide gallery__swiper--slide">
+                                        <img src="img/gallery/img-3.png" alt="">
+                                    </div>
+                                    <!-- /.swiper-slide -->
+                                    <div class="swiper-slide gallery__swiper--slide">
+                                        <img src="img/gallery/img-4.png" alt="">
+                                    </div>
+                                    <!-- /.swiper-slide -->
+                                    <div class="swiper-slide gallery__swiper--slide">
+                                        <img src="img/gallery/img-2.png" alt="">
+                                    </div>
+                                    <!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                    
+                                    </div>
+                                    <!-- /.swiper-slide -->
+                                </div>
+                                <!-- /.swiper-wrapper -->
+                            </div>
+                            <!-- /.swiper-container -->
                             <!-- /.gallery -->
                         </div>
                         <!-- /.col-md-8 -->
@@ -296,10 +326,14 @@
                     $('.about__text--show').text('Скрыть');
                 }		
                 // return false;
-
             });	
         });
-      
+    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container');
+        width: 100;
+        spaceBetween: 0;
     </script>
 </body>
 </html>
