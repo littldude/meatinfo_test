@@ -191,8 +191,8 @@ body {
   cursor: pointer;
 }
 .search__form button::before {
-  content: "";
-  font-family: "FontAwesome";
+  content: "";
+  font-family: "fontello";
   font-size: 16px;
   color: #ffffff;
 }
@@ -365,6 +365,13 @@ body {
   fill: #ffffff;
 }
 
+@font-face {
+  font-family: "fontello";
+  src: url("../fonts/fontello.eot?92718899");
+  src: url("../fonts/fontello.eot?92718899#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?92718899") format("woff2"), url("../fonts/fontello.woff?92718899") format("woff"), url("../fonts/fontello.ttf?92718899") format("truetype"), url("../fonts/fontello.svg?92718899#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 @media (max-width: 1112px) {
   .adv {
     display: none;

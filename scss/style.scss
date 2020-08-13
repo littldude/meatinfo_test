@@ -201,8 +201,8 @@ body {
             border-radius: 0 5px 5px 0;
             cursor: pointer;
             &::before {
-                content: "\f002";
-                font-family: 'FontAwesome';
+                content: '\e800';
+                font-family: 'fontello';
                 font-size: 16px;
                 color: #ffffff;
             }
@@ -391,6 +391,18 @@ body {
         height: 20px;
         fill: #ffffff;
     }
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?92718899');
+    src: url('../fonts/fontello.eot?92718899#iefix') format('embedded-opentype'),
+         url('../fonts/fontello.woff2?92718899') format('woff2'),
+         url('../fonts/fontello.woff?92718899') format('woff'),
+         url('../fonts/fontello.ttf?92718899') format('truetype'),
+         url('../fonts/fontello.svg?92718899#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media (max-width: 1112px) {
